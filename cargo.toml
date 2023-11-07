@@ -1,6 +1,8 @@
 [workspace]
 members = [
-    "demos/faucet"
+    "demos/faucet",
+    "demos/hubbub",
+    "subpax/hubbub_subhub",
 ]
 resolver = "2"
 

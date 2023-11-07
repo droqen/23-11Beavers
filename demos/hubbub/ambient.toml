@@ -1,0 +1,9 @@
+[package]
+id = "ndwzyelnsxa6krn4akc5d6t4dky3gkxl"
+name = "hubbub"
+version = "0.0.1"
+content = { type = "Playable" }
+ambient_version = "0.3.0"
+
+[dependencies]
+subhub = { path = "../../subpax/hubbub_subhub"}

@@ -1,0 +1,6 @@
+[package]
+id = "y4bmcrk6xfomaynvwhruzip7lnb6skfv"
+name = "hubbub (subhub)"
+version = "0.0.1"
+content = { type = "Asset", code = true }
+ambient_version = "0.3.0"
