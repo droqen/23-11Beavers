@@ -1,0 +1,29 @@
+[package]
+id = "qkooqtamyffs7ida4frm5gxrqjwvkjar"
+name = "faucet"
+version = "0.0.1"
+content = { type = "Playable" }
+ambient_version = "0.3.0"
+
+[components]
+faucet_flow_rate = { type = "F32", attributes = ["Networked", "Debuggable"] }
+faucet_spawn_lifetime = { type = "F32", attributes = ["Networked", "Debuggable"] }
+faucet_safety = { type = "Bool", attributes = ["Networked", "Debuggable"] }
+faucet_last_birth = { type = "F32" }
+
+# drip_life = { type = "F32" }
+drip_birth = { type = "F32" }
+
+cube_count = { type = "U32" }
+
+[messages.AlterFaucetFlowRate.fields]
+direction = "I32"
+
+[messages.AlterFaucetLifetime.fields]
+direction = "I32"
+
+[messages.EmergencyReset.fields]
+reset = "Bool"
+
+[messages.ToggleSafety.fields]
+toggle = "Bool"
