@@ -4,3 +4,12 @@ name = "hubbub (subhub)"
 version = "0.0.1"
 content = { type = "Asset", code = true }
 ambient_version = "0.3.0"
+
+[messages.TextToSubhub.fields]
+text = "String"
+
+[messages.TextInternalSubhub.fields]
+text = "String"
+
+[messages.TextFromSubhub.fields]
+text = "String"
