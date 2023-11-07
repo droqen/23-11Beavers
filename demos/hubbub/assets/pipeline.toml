@@ -1,0 +1,15 @@
+[[pipelines]]
+type = "Materials"
+output_decals = false
+[pipelines.importer]
+type = "Single"
+name = "loading_spinner"
+base_color = "loading_spinner.png"
+
+[[pipelines]]
+type = "Materials"
+output_decals = false
+[pipelines.importer]
+type = "Single"
+name = "loading_spinner_thick"
+base_color = "loading_spinner_thick.png"
