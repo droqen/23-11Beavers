@@ -1,0 +1,31 @@
+[package]
+id = "bbtxx5r4dnsgmhrbrrtsw2eabxf7qsey"
+name = "powerwidget"
+version = "0.0.1"
+content = { type = "Asset", code = true }
+ambient_version = "0.3.1-nightly-2023-10-26"
+
+[components]
+# name
+pw_base = { type = "U8", attributes = ["Networked"] }
+pw_exponent = { type = "U8", attributes = ["Networked"] }
+# pw_max_base = { type = "U8", attributes = ["Networked"] }
+# pw_max_exponent = { type = "U8", attributes = ["Networked"] }
+pw_calculated_value = { type = "F32", attributes = ["Networked"] }
+pw_max_value = { type = "F32", attributes = ["Networked"] }
+pw_description = { type = "String", attributes = ["Networked"] }
+
+[messages.AdjustPower.fields]
+widget_name = "String"
+set_base = "U8"
+set_exponent = "U8"
+
+[concepts.Powerwidget]
+name = "Power Widget"
+description = "A power widget is a tool for benchmarking. The client can write to its base or exponent to quickly achieve very large numbers."
+
+[concepts.Powerwidget.components.required]
+pw_base = { suggested = 2 }
+pw_exponent = { suggested = 2 }
+pw_max_value = { suggested = 10000.0 }
+pw_description = { suggested = "What does this powerwidget do?" }

@@ -2,7 +2,9 @@
 members = [
     "demos/faucet",
     "demos/hubbub",
+    "demos/powerwidget_demo",
     "subpax/hubbub_subhub",
+    "subpax/powerwidget",
 ]
 resolver = "2"
 
