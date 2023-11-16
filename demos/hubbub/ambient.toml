@@ -7,8 +7,10 @@ ambient_version = "0.3.1"
 
 [dependencies]
 subhub = { path = "../../subpax/hubbub_subhub"}
+pixie = { path = "../../subpax/pixie" }
+powerwidget = { path = "../../subpax/powerwidget" }
 
-[components]
-ui_anim_time = { type = "F32" }
-sent_time = { type = "F32" }
-sent_text = { type = "String" }
+# [components]
+# ui_anim_time = { type = "F32" }
+# sent_time = { type = "F32" }
+# sent_text = { type = "String" }
