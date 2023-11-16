@@ -1,10 +1,9 @@
 use ambient_api::{core::app::components::name, core::messages::Frame, prelude::*};
 
-use packages::powerwidget::{components::*, concepts::Powerwidget};
-
-use packages::this::components::*;
-
-use packages::this::messages::TextToClient;
+use packages::{
+    powerwidget::{components::*, concepts::Powerwidget},
+    this::{components::*, messages::TextToClient},
+};
 // use packages::subhub::messages::{TextFromSubhub, TextInternalSubhub, TextToSubhub};
 
 #[main]

@@ -27,7 +27,10 @@ pub fn main() {
 
     {
         Entity::new()
-            .with(pix_string(), "messages received each frame:".to_string())
+            .with(
+                pix_string(),
+                "garbage messages received each frame:".to_string(),
+            )
             .with(pix_place(), ivec2(100, 90))
             .with(pix_z(), 0)
             .spawn();

@@ -6,9 +6,12 @@ content = { type = "Playable" }
 ambient_version = "0.3.1"
 
 [dependencies]
-subhub = { path = "../../subpax/hubbub_subhub"}
+subhub = { path = "../../subpax/hubbub_subhub"} # not being used at the moment
 pixie = { path = "../../subpax/pixie" }
 powerwidget = { path = "../../subpax/powerwidget" }
+# jellybean = { deployment = "7Lab4cQjHhoXAE0P7jR8PO" } # let's do a simple platformer character
+
+include_very_simple_jumper = { path = "../very_simple_jumper" } # spawn this on its own layer, let's just see how the messages interact
 
 # [components]
 # ui_anim_time = { type = "F32" }
