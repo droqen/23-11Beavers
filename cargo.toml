@@ -3,7 +3,9 @@ members = [
     "demos/faucet",
     "demos/hubbub",
     "demos/powerwidget_demo",
+    "demos/very_simple_jumper",
     "subpax/hubbub_subhub",
+    "subpax/jellybean",
     "subpax/pixie",
     "subpax/powerwidget",
 ]

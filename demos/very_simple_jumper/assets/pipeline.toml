@@ -1,0 +1,7 @@
+[[pipelines]]
+type = "Materials"
+output_decals = false
+[pipelines.importer]
+type = "Single"
+name = "chara"
+base_color = "chara.png"

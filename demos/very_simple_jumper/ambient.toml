@@ -1,0 +1,23 @@
+[package]
+id = "pgykfx4wpws3rdb354iu6o2c6kewilw6"
+name = "very_simple_jumper"
+version = "0.0.1"
+content = { type = "Playable" }
+ambient_version = "0.3.1-nightly-2023-10-26"
+
+[dependencies]
+# jellybean = { deployment = "7Lab4cQjHhoXAE0P7jR8PO" }
+jellybean = { path = "../../subpax/jellybean" }
+pixie = { path = "../../subpax/pixie" }
+
+[components]
+pinx = { type = "F32" }
+jumpbuf = { type = "F32" }
+florbuf = { type = "F32" }
+player_pixie_pos = { type = "Ivec2", attributes = ["Networked", "Debuggable"]}
+
+[messages.StickControl.fields]
+pinx = "F32"
+
+[messages.JumpButton.fields]
+# no fields required
