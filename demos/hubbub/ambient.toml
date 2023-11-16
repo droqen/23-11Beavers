@@ -3,15 +3,15 @@ id = "ndwzyelnsxa6krn4akc5d6t4dky3gkxl"
 name = "hubbub"
 version = "0.0.1"
 content = { type = "Playable" }
-ambient_version = "0.3.1"
+ambient_version = "0.3.2-nightly-2023-11-16"
 
 [dependencies]
 # subhub = { path = "../../subpax/hubbub_subhub"} # not being used at the moment
-pixie = { path = "../../subpax/pixie" }
-powerwidget = { path = "../../subpax/powerwidget" }
+pixie = { path = "../../subpax/pixie" , deployment = "50zY8DuQMhyphBp7vDMYit" }
+powerwidget = { path = "../../subpax/powerwidget" , deployment = "1y98a2YqI8WcM2Rjku8WRo" }
 # jellybean = { deployment = "7Lab4cQjHhoXAE0P7jR8PO" } # let's do a simple platformer character
 
-include_very_simple_jumper = { path = "../very_simple_jumper" } # spawn this on its own layer, let's just see how the messages interact
+include_very_simple_jumper = { path = "../very_simple_jumper" , deployment = "617ZculSpuX5ePijgpDueu" } # spawn this on its own layer, let's just see how the messages interact
 
 # [components]
 # ui_anim_time = { type = "F32" }
