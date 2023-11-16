@@ -14,3 +14,15 @@ powerwidget = { path = "../../subpax/powerwidget" }
 # ui_anim_time = { type = "F32" }
 # sent_time = { type = "F32" }
 # sent_text = { type = "String" }
+
+[components]
+
+# used serverside
+message_rate_counter = { type = "F32" }
+
+# used clientside
+cs_msgs_rcvd = { type = "U32" }
+cs_msgs_rcvd_last_frame = { type = "U32" }
+
+[messages.TextToClient.fields]
+text = "String"
