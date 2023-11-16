@@ -9,8 +9,20 @@ use packages::{
 pub fn main() {
     // floor
     Entity::new()
-        .with(jellybean_pos(), ivec2(0, 100))
+        .with(jellybean_pos(), ivec2(0, 150))
         .with(jellybean_hitbox(), ivec4(0, 0, 200, 10))
+        .with(jellybean_is_solid(), ())
+        .spawn();
+    // west wall
+    Entity::new()
+        .with(jellybean_pos(), ivec2(0 - 10, 0))
+        .with(jellybean_hitbox(), ivec4(0, 0, 10, 150))
+        .with(jellybean_is_solid(), ())
+        .spawn();
+    // east wall
+    Entity::new()
+        .with(jellybean_pos(), ivec2(200, 0))
+        .with(jellybean_hitbox(), ivec4(0, 0, 10, 150))
         .with(jellybean_is_solid(), ())
         .spawn();
 
@@ -49,9 +61,8 @@ pub fn main() {
             {
                 let dt = dt.clone();
                 entity::mutate_component(plr, jellybean_vel(), move |vel| {
-                    vel.x = tow(vel.x, 1. * pinput_x, 2. * dt);
+                    vel.x = tow(vel.x, 1.5 * pinput_x, 3. * dt);
                     vel.y = tow(vel.y, 3., 7. * dt);
-                    println!("Players pos={pos:?} Players vel={vel:?}");
                 });
             }
 
@@ -61,7 +72,7 @@ pub fn main() {
                 entity::set_component(plr, florbuf(), 0.);
                 entity::mutate_component(plr, jellybean_vel(), |vel| {
                     if vel.y >= 0. {
-                        vel.y = -1.5;
+                        vel.y = -2.5;
                     }
                 });
             } else {
