@@ -4,6 +4,7 @@ members = [
     "demos/hubbub",
     "demos/powerwidget_demo",
     "subpax/hubbub_subhub",
+    "subpax/pixie",
     "subpax/powerwidget",
 ]
 resolver = "2"
